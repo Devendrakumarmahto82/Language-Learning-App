@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+        <!-- School Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusTopEnd="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/schoolNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Name"
+                android:textAllCaps="true"
+                android:inputType="textCapWords"
+                android:layout_marginTop="16dp"
+                android:enabled="true"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!-- Address -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusTopEnd="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:enabled="true"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusTopEnd="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact No"
+                android:enabled="true"
+                android:inputType="number"
+                android:layout_marginTop="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxCornerRadiusTopEnd="5dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/established_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date of Birth"
+                android:enabled="true"
+                android:inputType="textCapSentences"
+                android:layout_marginTop="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:background="#1B1B1B"
+            android:layout_height="1.5dp"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#0EAB60"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/editBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#D55025"
+                android:text="Edit"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/saveButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:backgroundTint="#2196F3"/>
+
+    </LinearLayout>
+</ScrollView>

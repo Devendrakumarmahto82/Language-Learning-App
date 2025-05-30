@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fill_the_blanksFragment"
+    android:padding="16dp">
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cardview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          app:cardCornerRadius="20dp"
+          app:cardElevation="10dp"
+          app:cardMaxElevation="10dp"
+          app:cardBackgroundColor="#C8F8EC"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <TextView
+                  android:id="@+id/fillQuestionText"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:textColor="#F0607D"
+                  android:layout_margin="20dp"
+                  android:text="Question here"
+                  android:textSize="24sp"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"/>
+
+              <EditText
+                  android:id="@+id/fillAnswerInput"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="24sp"
+                  android:textColor="#166451"
+                  android:text="fdsaf"
+                  android:layout_gravity="center"
+                  android:layout_marginTop="20dp"
+                  android:layout_marginBottom="20dp"
+                  android:hint="Your answer"
+                  app:layout_constraintTop_toBottomOf="@id/fillQuestionText"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"/>
+          </LinearLayout>
+
+      </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/fillCheckBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:backgroundTint="#23905B"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintTop_toBottomOf="@id/cardview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/fillNextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="#F43A5D"
+            android:text="Next"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/fillCheckBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>

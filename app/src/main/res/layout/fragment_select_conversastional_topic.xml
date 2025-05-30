@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SelectConversastionalTopicFragment">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="conversational Dictionary "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Through a series of real life scenarios lets try and work on our spoken spanish"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/HomesandFamily"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" >
+
+
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:src="@drawable/rectangle91"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/HomesandFamily"
+        app:layout_constraintTop_toBottomOf="@id/HomesandFamily"
+        app:layout_constraintEnd_toEndOf="@id/HomesandFamily"
+        android:text="Home and Family"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/shopping"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="24dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle92"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/shopping"
+        app:layout_constraintTop_toBottomOf="@id/shopping"
+        app:layout_constraintEnd_toEndOf="@id/shopping"
+        android:text="Shopping"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Gift"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomesandFamily">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle93" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Gift"
+        app:layout_constraintTop_toBottomOf="@id/Gift"
+        app:layout_constraintEnd_toEndOf="@id/Gift"
+        android:text="Gift"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Couple"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopping">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle94" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Couple"
+        app:layout_constraintTop_toBottomOf="@id/Couple"
+        app:layout_constraintEnd_toEndOf="@id/Couple"
+        android:text="Couple"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Driver"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gift">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle95" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Driver"
+        app:layout_constraintTop_toBottomOf="@id/Driver"
+        app:layout_constraintEnd_toEndOf="@id/Driver"
+        android:text="Driver"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Plumber"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Couple">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/rectangle96" />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/Plumber"
+        app:layout_constraintTop_toBottomOf="@id/Plumber"
+        app:layout_constraintEnd_toEndOf="@id/Plumber"
+        android:text="Plumber"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/topicRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

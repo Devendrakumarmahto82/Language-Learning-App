@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.languagelearningapp.Authentication.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginSignupFragment"
+            app:destination="@id/loginSignupFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginSignupFragment"
+        android:name="com.example.languagelearningapp.Authentication.LoginSignupFragment"
+        android:label="fragment_login_signup"
+        tools:layout="@layout/fragment_login_signup" >
+        <action
+            android:id="@+id/action_loginSignupFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginSignupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.languagelearningapp.Authentication.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_loginSignupFragment"
+            app:destination="@id/loginSignupFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_displaySuccesfullyFragment"
+            app:destination="@id/displaySuccesfullyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intorPage1Fragment"
+        android:name="com.example.languagelearningapp.Authentication.IntorPage1Fragment"
+        android:label="fragment_intor_page1"
+        tools:layout="@layout/fragment_intor_page1" >
+        <action
+            android:id="@+id/action_intorPage1Fragment_to_introPage2Fragment"
+            app:destination="@id/introPage2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introPage2Fragment"
+        android:name="com.example.languagelearningapp.Authentication.IntroPage2Fragment"
+        android:label="fragment_intro_page2"
+        tools:layout="@layout/fragment_intro_page2" >
+        <action
+            android:id="@+id/action_introPage2Fragment_to_introPage3Fragment"
+            app:destination="@id/introPage3Fragment" />
+        <action
+            android:id="@+id/action_introPage2Fragment_to_intorPage1Fragment"
+            app:destination="@id/intorPage1Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introPage3Fragment"
+        android:name="com.example.languagelearningapp.IntroPage3Fragment"
+        android:label="fragment_intro_page3"
+        tools:layout="@layout/fragment_intro_page3" >
+        <action
+            android:id="@+id/action_introPage3Fragment_to_introPage2Fragment"
+            app:destination="@id/introPage2Fragment" />
+        <action
+            android:id="@+id/action_introPage3Fragment_to_introPage2Fragment2"
+            app:destination="@id/introPage2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.languagelearningapp.Authentication.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_loginSignupFragment"
+            app:destination="@id/loginSignupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_displaySuccesfullyFragment"
+            app:destination="@id/displaySuccesfullyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/displaySuccesfullyFragment"
+        android:name="com.example.languagelearningapp.Authentication.DisplaySuccesfullyFragment"
+        android:label="fragment_display_succesfully"
+        tools:layout="@layout/fragment_display_succesfully" >
+        <action
+            android:id="@+id/action_displaySuccesfullyFragment_to_intorPage1Fragment"
+            app:destination="@id/intorPage1Fragment" />
+    </fragment>
+</navigation>

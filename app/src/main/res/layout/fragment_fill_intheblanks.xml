@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FillIntheblanksFragment">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="#FFF3E0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Question Text -->
+                <TextView
+                    android:id="@+id/questionText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What is the capital of France?"
+                    android:textSize="18sp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- MCQ Options -->
+                <RadioGroup
+                    android:id="@+id/optionsGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/option1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Option 1" />
+
+                    <RadioButton
+                        android:id="@+id/option2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Option 2" />
+
+                    <RadioButton
+                        android:id="@+id/option3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Option 3" />
+
+                    <RadioButton
+                        android:id="@+id/option4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Option 4" />
+                </RadioGroup>
+
+                <!-- Feedback (Correct/Wrong) -->
+                <TextView
+                    android:id="@+id/feedbackText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#004D40"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Check Button -->
+        <Button
+            android:id="@+id/checkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="60dp"
+            android:text="Check Answer"
+            android:backgroundTint="#388E3C"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toTopOf="@+id/nextbtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="20dp"
+            android:text="Next"
+            android:visibility="gone"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFF"
+            app:layout_constraintBottom_toTopOf="@id/nextbutton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/nextbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="Next"
+        android:visibility="visible"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

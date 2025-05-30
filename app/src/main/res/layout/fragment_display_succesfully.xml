@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C1CED"
+    tools:context=".Authentication.DisplaySuccesfullyFragment">
+
+    <ImageView
+        android:id="@+id/ellipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ellipse"
+        app:tint="#FFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle"
+        app:layout_constraintStart_toStartOf="@id/ellipse"
+        app:layout_constraintEnd_toEndOf="@id/ellipse"
+        app:layout_constraintTop_toTopOf="@id/ellipse"
+        app:layout_constraintBottom_toBottomOf="@id/ellipse"
+          />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Successfully"
+        android:textColor="#FFFF"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/rectangle"
+        app:layout_constraintEnd_toEndOf="@id/rectangle"
+        app:layout_constraintTop_toBottomOf="@id/rectangle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

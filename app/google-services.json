@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "265746171736",
+    "firebase_url": "https://fir-authentication-a4b31-default-rtdb.firebaseio.com",
+    "project_id": "fir-authentication-a4b31",
+    "storage_bucket": "fir-authentication-a4b31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265746171736:android:52f8082260adb964dec72d",
+        "android_client_info": {
+          "package_name": "com.example.firebaseauthentication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhXbu3B9_P_uyIzbPX3nn5ZkwpxOrIhws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265746171736:android:99222aaf48d08875dec72d",
+        "android_client_info": {
+          "package_name": "com.example.languagelearningapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhXbu3B9_P_uyIzbPX3nn5ZkwpxOrIhws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

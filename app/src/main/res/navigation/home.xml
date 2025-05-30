@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.languagelearningapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_seeLanguageFragment"
+            app:destination="@id/seeLanguageFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_selectConversastionalTopicFragment"
+            app:destination="@id/selectConversastionalTopicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeLanguageFragment"
+        android:name="com.example.languagelearningapp.SeeLanguageFragment"
+        android:label="fragment_see_language"
+        tools:layout="@layout/fragment_see_language" >
+        <action
+            android:id="@+id/action_seeLanguageFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_seeLanguageFragment_to_selectLevelFragment"
+            app:destination="@id/selectLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectLevelFragment"
+        android:name="com.example.languagelearningapp.SelectLevelFragment"
+        android:label="fragment_select_level"
+        tools:layout="@layout/fragment_select_level" >
+        <action
+            android:id="@+id/action_selectLevelFragment_to_seeLanguageFragment"
+            app:destination="@id/seeLanguageFragment" />
+        <action
+            android:id="@+id/action_selectLevelFragment_to_selectConversastionalTopicFragment"
+            app:destination="@id/selectConversastionalTopicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicLearningFragment"
+        android:name="com.example.languagelearningapp.BasicLearningFragment"
+        android:label="fragment_basic_learning"
+        tools:layout="@layout/fragment_basic_learning" >
+        <action
+            android:id="@+id/action_basicLearningFragment_to_selectConversastionalTopicFragment"
+            app:destination="@id/selectConversastionalTopicFragment" />
+        <argument
+            android:name="topicId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_basicLearningFragment_to_fillIntheblanksFragment"
+            app:destination="@id/fillIntheblanksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mediumLearningFragment"
+        android:name="com.example.languagelearningapp.MediumLearningFragment"
+        android:label="fragment_medium_learning"
+        tools:layout="@layout/fragment_medium_learning" >
+        <action
+            android:id="@+id/action_mediumLearningFragment_to_selectConversastionalTopicFragment"
+            app:destination="@id/selectConversastionalTopicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/advanceLearningFragment"
+        android:name="com.example.languagelearningapp.AdvanceLearningFragment"
+        android:label="fragment_advance_learning"
+        tools:layout="@layout/fragment_advance_learning" >
+        <action
+            android:id="@+id/action_advanceLearningFragment_to_selectConversastionalTopicFragment"
+            app:destination="@id/selectConversastionalTopicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectConversastionalTopicFragment"
+        android:name="com.example.languagelearningapp.SelectConversastionalTopicFragment"
+        android:label="fragment_select_conversastional_topic"
+        tools:layout="@layout/fragment_select_conversastional_topic" >
+        <action
+            android:id="@+id/action_selectConversastionalTopicFragment_to_basicLearningFragment"
+            app:destination="@id/basicLearningFragment" />
+        <action
+            android:id="@+id/action_selectConversastionalTopicFragment_to_selectLevelFragment"
+            app:destination="@id/selectLevelFragment" />
+        <argument
+            android:name="topic"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/fillIntheblanksFragment"
+        android:name="com.example.languagelearningapp.FillIntheblanksFragment"
+        android:label="fragment_fill_intheblanks"
+        tools:layout="@layout/fragment_fill_intheblanks" >
+        <action
+            android:id="@+id/action_fillIntheblanksFragment_to_basicLearningFragment"
+            app:destination="@id/basicLearningFragment" />
+        <action
+            android:id="@+id/action_fillIntheblanksFragment_to_fill_the_blanksFragment"
+            app:destination="@id/fill_the_blanksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fill_the_blanksFragment"
+        android:name="com.example.languagelearningapp.Fill_the_blanksFragment"
+        android:label="fragment_fill_the_blanks"
+        tools:layout="@layout/fragment_fill_the_blanks" >
+        <action
+            android:id="@+id/action_fill_the_blanksFragment_to_fillIntheblanksFragment"
+            app:destination="@id/fillIntheblanksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.example.languagelearningapp.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SelectLevelFragment">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cardView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:backgroundTint="#F48B8B"
+       app:cardElevation="10dp"
+       app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="#070707"
+       app:layout_constraintEnd_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_margin="20dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+   <TextView
+       android:id="@+id/tv1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Begginer"
+       android:textColor="#51E4E4"
+       android:layout_marginStart="20dp"
+       android:textAllCaps="true"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Start With Basic"
+       android:textColor="#197547"
+       android:layout_marginTop="5dp"
+       android:layout_marginStart="20dp"
+       android:textAllCaps="true"
+       android:textSize="10sp"
+       android:textStyle="bold"
+       app:layout_constraintTop_toBottomOf="@id/tv1"
+       app:layout_constraintStart_toStartOf="parent"
+       />
+   <ImageView
+       android:layout_width="200dp"
+       android:layout_height="100dp"
+       android:src="@drawable/rectangle32"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cardView2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#F48B8B"
+       app:cardElevation="10dp"
+       app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="#070707"
+      app:layout_constraintTop_toBottomOf="@id/cardView1"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginTop="30dp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="120dp">
+
+         <TextView
+             android:id="@+id/tv2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Moderate"
+             android:textColor="#51E4E4"
+             android:layout_marginStart="20dp"
+             android:textAllCaps="true"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Start With Medium Level"
+             android:textColor="#197547"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="12dp"
+             android:textAllCaps="true"
+             android:textSize="10sp"
+             android:textStyle="bold"
+             app:layout_constraintTop_toBottomOf="@id/tv2"
+             app:layout_constraintStart_toStartOf="parent"
+             />
+
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_height="100dp"
+             android:src="@drawable/rectangle33"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.cardview.widget.CardView>
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cardView3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:backgroundTint="#F48B8B"
+       app:cardElevation="10dp"
+       app:cardCornerRadius="10dp"
+       app:cardBackgroundColor="#070707"
+       app:layout_constraintTop_toBottomOf="@id/cardView2"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_marginStart="20dp"
+       android:layout_marginEnd="20dp"
+       android:layout_marginTop="30dp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="120dp">
+
+         <TextView
+             android:id="@+id/tv3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Advance"
+             android:textColor="#51E4E4"
+             android:layout_marginStart="20dp"
+             android:textAllCaps="true"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Start With Advance Level"
+             android:textColor="#197547"
+             android:layout_marginTop="5dp"
+             android:layout_marginStart="12dp"
+             android:textAllCaps="true"
+             android:textSize="10sp"
+             android:textStyle="bold"
+             app:layout_constraintTop_toBottomOf="@id/tv3"
+             app:layout_constraintStart_toStartOf="parent"
+             />
+
+         <ImageView
+             android:layout_width="200dp"
+             android:layout_height="100dp"
+             android:src="@drawable/rectangle34"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
